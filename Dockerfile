@@ -4,4 +4,4 @@ RUN apt-get install apache2 -y
 WORKDIR /var/www/html
 COPY . .
 EXPOSE 8085
-ENTRYPOINT  apachectl, -D FOREGROUND
+ENTRYPOINT  apachectl -D FOREGROUND
